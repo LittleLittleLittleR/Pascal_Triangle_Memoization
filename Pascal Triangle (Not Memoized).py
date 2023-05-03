@@ -14,9 +14,9 @@ def pascal (x):
         return row
 
 def execute():
-    for x in range(500):
+    for x in range(500):   ## modify the number 750 to change the number of rows to find
         row = pascal(x)
-        print(row)
+        print(row)         ## comment this out to only find the processing time of the code
 
 def average_time(reps):
     timel = []
@@ -27,7 +27,7 @@ def average_time(reps):
         timel.append(instant_time)
     return sum(timel)/len(timel)
 
-avg = average_time(50)
+avg = average_time(50)     ## modify the number 50 to change the number of times the code runs (this is mainly to get a reliable average processing time)
 print("------------- Pascal triangle(not memoized)-------------")
 print("The code finds the first 500 lines of the pascal triangle")
 print("The average time of 50 runs of the code is: {}".format(avg))
