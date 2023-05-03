@@ -12,6 +12,9 @@ def pascal(x):
         test = ' '.join(str(a) for a in dic[x].values())
         return test
         
-for x in range(1, 101):
-    row = pascal(x)
-    print(row)
+def execute(n):
+    for x in range(1, n+1):
+        row = pascal(x)
+        print(row)
+
+execute(100)
